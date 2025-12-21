@@ -1,0 +1,9 @@
+<!-- Placeholder for logo-temancatin.png -->
+<!-- This file represents a logo image that should be placed in the public folder -->
+<!-- You can replace this with an actual PNG logo file -->
+
+<!-- SVG placeholder for logo -->
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="60" fill="#a2cbe1" rx="10"/>
+  <text x="60" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">TemanCatin</text>
+</svg>
