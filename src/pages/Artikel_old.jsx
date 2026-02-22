@@ -391,27 +391,27 @@ const Artikel = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-4xl p-12 text-center text-white shadow-2xl">
-            <div className="text-5xl mb-6">💌</div>
-            <h2 className="text-4xl font-bold mb-6">Jangan Lewatkan Tips Terbaru!</h2>
-            <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
-              Berlangganan newsletter kami dan dapatkan artikel eksklusif, tips praktis, dan panduan lengkap untuk pernikahan bahagia langsung di email Anda.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="Masukkan email Anda"
-                className="flex-1 px-6 py-4 rounded-xl text-gray-700 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-lg"
-              />
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
-                Subscribe ✨
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      // <section className="py-20 px-6">
+      //   <div className="max-w-4xl mx-auto">
+      //     <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-4xl p-12 text-center text-white shadow-2xl">
+      //       <div className="text-5xl mb-6">💌</div>
+      //       <h2 className="text-4xl font-bold mb-6">Jangan Lewatkan Tips Terbaru!</h2>
+      //       <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
+      //         Berlangganan newsletter kami dan dapatkan artikel eksklusif, tips praktis, dan panduan lengkap untuk pernikahan bahagia langsung di email Anda.
+      //       </p>
+      //       <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+      //         <input
+      //           type="email"
+      //           placeholder="Masukkan email Anda"
+      //           className="flex-1 px-6 py-4 rounded-xl text-gray-700 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-lg"
+      //         />
+      //         <button className="bg-white text-purple-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+      //           Subscribe ✨
+      //         </button>
+      //       </div>
+      //     </div>
+      //   </div>
+      // </section>
     </div>
   );
 };

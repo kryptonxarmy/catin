@@ -5,22 +5,22 @@ import { getFeaturedVideos, getCategoryColor } from "../data/videoData.js";
 
 const konselors = [
   {
-    name: "Dr. Sari Finansial",
-    expertise: "Keuangan & Investasi",
+    name: "Noviana Putri Anggraeni",
+    expertise: "Konselor Pernikahan",
     whatsapp: "6281234567890",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b606?w=100&h=100&fit=crop&crop=face",
+    avatar: "/photo/novi.jpeg",
   },
   {
-    name: "Ustadz Budi Nikah",
-    expertise: "Persiapan & Konseling Nikah",
-    whatsapp: "6289876543210",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    name: "Yanuari Srianturi, M. Pd., Kons.",
+    expertise: "Konselor Pernikahan",
+    whatsapp: "089633156656",
+    avatar: "/photo/yanu.jpeg",
   },
   {
-    name: "Dr. Lisa Parenting",
-    expertise: "Parenting & Psikologi Anak",
-    whatsapp: "6281122334455",
-    avatar: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=100&h=100&fit=crop&crop=face",
+    name: "Ah. Fahri Munir, M. Pd.",
+    expertise: "Konselor Pernikahan",
+    whatsapp: "0895331112309",
+    avatar: "/photo/fahri.jpeg",
   },
 ];
 
@@ -83,7 +83,7 @@ const Home = () => {
                 <span className="text-gray-800">pernikahanmu dengan matang</span>
               </h1>
 
-              <p className="text-xl lg:text-2xl text-gray-600 mb-12 leading-relaxed">Yuk siapkan pernikahanmu dengan matang bersama panduan lengkap dari para ahli. Mulai dari tes kesiapan hingga konsultasi mendalam.</p>
+              <p className="text-xl lg:text-2xl text-gray-600 mb-12 leading-relaxed">TemanCatin sebagai sarana untuk mempersiapkan dan belajar tentang basic life skill sebelum menikah, dengan desainnya yang fresh membuat pengalaman belajarmu semakin asik.</p>
 
               <div className="flex flex-col sm:flex-row gap-6">
                 <Link
@@ -107,7 +107,7 @@ const Home = () => {
             {/* Image/Visual Content */}
             <div className="relative hidden lg:block">
               <div className="relative w-full h-96 rounded-3xl overflow-hidden shadow-2xl">
-                <img src="/bride-6825609_960_720.png" alt="Happy Couple" className="w-full h-full object-cover" />
+                <img src="/hero-bg.jpg" alt="Happy Couple" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
                 {/* Floating Stats */}
@@ -250,27 +250,6 @@ const Home = () => {
                     Artikel
                   </Link>
                   <Link to="/video?category=Teman Parenting" className="bg-yellow-700 text-white px-4 py-2 rounded-xl font-semibold hover:bg-yellow-800 transition-colors">
-                    Video
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Teman Konsultasi */}
-            <div className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 p-8 rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer group border border-gray-200 relative overflow-hidden">
-              <div className="flex justify-center mb-6 group-hover:animate-bounce">
-                <MessageCircle size={40} className="text-purple-700" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-gray-900">Teman Konsultasi</h3>
-              <p className="text-gray-600 text-center text-sm leading-relaxed">Konsultasi dengan ahli berpengalaman</p>
-
-              {/* Hover Buttons */}
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                <div className="flex gap-4">
-                  <Link to="/artikel?category=Teman Konsultasi" className="bg-white text-purple-700 px-4 py-2 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
-                    Artikel
-                  </Link>
-                  <Link to="/video?category=Teman Konsultasi" className="bg-purple-700 text-white px-4 py-2 rounded-xl font-semibold hover:bg-purple-800 transition-colors">
                     Video
                   </Link>
                 </div>
@@ -438,12 +417,12 @@ const Home = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Siap Memulai Perjalanan Pernikahan?</h2>
           <p className="text-xl mb-12 opacity-90">Bergabunglah dengan ribuan pasangan yang telah mempersiapkan pernikahan impian mereka bersama TemanCatin</p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          {/* <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <input type="email" placeholder="Masukkan email Anda" className="w-full sm:w-auto flex-1 max-w-md px-6 py-4 rounded-2xl text-gray-700 focus:outline-none focus:ring-4 focus:ring-white/30" />
             <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">Mulai Sekarang</button>
-          </div>
-
-          <p className="text-sm opacity-75 mt-4">Gratis untuk memulai • Tidak ada spam • Batalkan kapan saja</p>
+          </div> */}
+{/* 
+          <p className="text-sm opacity-75 mt-4">Gratis untuk memulai • Tidak ada spam • Batalkan kapan saja</p> */}
         </div>
       </section>
 

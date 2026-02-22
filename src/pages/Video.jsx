@@ -224,7 +224,7 @@ const Video = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-purple-600">
+      {/* <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Jangan Lewatkan Video Terbaru!</h2>
           <p className="text-xl mb-8 opacity-90">Berlangganan untuk mendapatkan notifikasi video tutorial terbaru dari para ahli</p>
@@ -233,7 +233,7 @@ const Video = () => {
             <button className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">Berlangganan 🔔</button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -277,53 +277,6 @@ export const artikelData = [
     likes: 22,
   },
   {
-    id: 7,
-    title: "Panduan Lengkap Konseling Pra Nikah",
-    slug: "panduan-lengkap-konseling-pra-nikah",
-    excerpt: "Mengapa konseling pra nikah penting dan bagaimana memilih konselor yang tepat. Panduan lengkap untuk persiapan yang matang menuju pernikahan.",
-    content: `
-      <div class="article-content">
-        <h2 class="text-2xl font-bold mb-4 text-gray-800">Mengapa Konseling Pra Nikah Penting?</h2>
-        <p class="mb-6 text-gray-600 leading-relaxed">Konseling pra nikah membantu pasangan memahami satu sama lain dengan lebih mendalam, mengidentifikasi potensi masalah, dan membangun fondasi komunikasi yang kuat untuk pernikahan yang harmonis.</p>
-        
-        <h3 class="text-xl font-semibold mb-3 text-gray-800">Manfaat Konseling Pra Nikah</h3>
-        <div class="space-y-4 mb-6">
-          <div class="flex items-start space-x-3 p-4 bg-purple-50 rounded-xl">
-            <div class="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center flex-shrink-0">💬</div>
-            <div>
-              <h4 class="font-semibold text-purple-800">Komunikasi yang Lebih Baik</h4>
-              <p class="text-purple-600 text-sm">Belajar teknik komunikasi efektif dan resolusi konflik</p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-3 p-4 bg-blue-50 rounded-xl">
-            <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center flex-shrink-0">🎯</div>
-            <div>
-              <h4 class="font-semibold text-blue-800">Ekspektasi yang Realistis</h4>
-              <p class="text-blue-600 text-sm">Memahami dan menyesuaikan harapan terhadap pernikahan</p>
-            </div>
-          </div>
-        </div>
-        
-        <h3 class="text-xl font-semibold mb-3 text-gray-800">Cara Memilih Konselor yang Tepat</h3>
-        <p class="mb-6 text-gray-600 leading-relaxed">Pilih konselor yang berpengalaman, memiliki sertifikasi yang sesuai, dan membuat Anda merasa nyaman untuk terbuka dalam sesi konseling.</p>
-      </div>
-    `,
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-    category: "Teman Konsultasi",
-    readTime: "6 min",
-    author: {
-      name: "Prof. Lisa Maharani",
-      bio: "Konselor Pernikahan bersertifikat dengan pengalaman lebih dari 15 tahun dalam terapi pasangan dan konseling pra nikah.",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
-      specialty: "Konselor Pernikahan",
-    },
-    date: "1 Nov 2024",
-    tags: ["konseling", "pranikah", "terapi", "komunikasi"],
-    featured: false,
-    views: 480,
-    likes: 35,
-  },
-  {
     id: 8,
     title: "Checklist Lengkap Persiapan Pernikahan",
     slug: "checklist-lengkap-persiapan-pernikahan",
@@ -467,13 +420,13 @@ export const getCategoryColor = (category) => {
     "Teman Nikah": "bg-pink-100 text-pink-700 border-pink-200",
     "Teman Belajar": "bg-blue-100 text-blue-700 border-blue-200",
     "Teman Parenting": "bg-yellow-100 text-yellow-700 border-yellow-200",
-    "Teman Konsultasi": "bg-purple-100 text-purple-700 border-purple-200",
+
     "Panduan Catin": "bg-indigo-100 text-indigo-700 border-indigo-200",
   };
   return colors[category] || "bg-gray-100 text-gray-700 border-gray-200";
 };
 
 // Daftar kategori yang tersedia
-export const categories = ["Semua", "Teman Finansial", "Teman Nikah", "Teman Belajar", "Teman Parenting", "Teman Konsultasi", "Panduan Catin"];
+export const categories = ["Semua", "Teman Finansial", "Teman Nikah", "Teman Belajar", "Teman Parenting", "Panduan Catin"];
 
 export default artikelData;

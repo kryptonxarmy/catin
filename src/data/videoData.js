@@ -128,67 +128,7 @@ export const videoData = [
     featured: false,
   },
 
-  // Teman Konsultasi
-  {
-    id: 9,
-    title: "Kapan Waktu yang Tepat untuk Konseling Pra Nikah?",
-    slug: "waktu-tepat-konseling-pranikah",
-    description: "Memahami pentingnya konseling pra nikah dan kapan waktu yang tepat untuk mulai berkonsultasi dengan ahli.",
-    youtubeId: "hFZFjoX2cGg", // Dummy YouTube ID
-    thumbnail: "https://img.youtube.com/vi/hFZFjoX2cGg/maxresdefault.jpg",
-    category: "Teman Konsultasi",
-    duration: "15:27",
-    views: 7200,
-    publishedDate: "2024-11-06",
-    speaker: "Dr. Andi Pratama",
-    tags: ["konseling", "pranikah", "terapi", "konsultasi"],
-    featured: false,
-  },
-  {
-    id: 10,
-    title: "Memilih Konselor yang Tepat untuk Hubungan Anda",
-    slug: "memilih-konselor-yang-tepat",
-    description: "Panduan memilih konselor atau terapis yang sesuai dengan kebutuhan dan kepribadian Anda sebagai pasangan.",
-    youtubeId: "sTSA_sWGM44", // Dummy YouTube ID
-    thumbnail: "https://img.youtube.com/vi/sTSA_sWGM44/maxresdefault.jpg",
-    category: "Teman Konsultasi",
-    duration: "13:58",
-    views: 5400,
-    publishedDate: "2024-10-28",
-    speaker: "Prof. Lisa Maharani",
-    tags: ["konselor", "terapis", "pemilihan", "kriteria"],
-    featured: false,
-  },
-  {
-    id: 11,
-    title: "Sesi Konsultasi: Mengatasi Kecemasan Pra Nikah",
-    slug: "mengatasi-kecemasan-pra-nikah",
-    description: "Sesi konsultasi langsung dengan psikolog untuk mengatasi kecemasan dan keraguan jelang pernikahan dengan pendekatan yang tepat.",
-    youtubeId: "QH2-TGUlwu4", // Dummy YouTube ID
-    thumbnail: "https://img.youtube.com/vi/QH2-TGUlwu4/maxresdefault.jpg",
-    category: "Teman Konsultasi",
-    duration: "35:20",
-    views: 18900,
-    publishedDate: "2024-10-25",
-    speaker: "Dr. Andi Therapist",
-    tags: ["konsultasi", "kecemasan", "terapi", "mental health"],
-    featured: false,
-  },
-  {
-    id: 12,
-    title: "Q&A: Membangun Fondasi Pernikahan yang Kuat",
-    slug: "qa-fondasi-pernikahan-kuat",
-    description: "Sesi tanya jawab interaktif tentang cara membangun pernikahan yang bahagia dan langgeng dengan para ahli.",
-    youtubeId: "y6120QOlsfU", // Dummy YouTube ID
-    thumbnail: "https://img.youtube.com/vi/y6120QOlsfU/maxresdefault.jpg",
-    category: "Teman Konsultasi",
-    duration: "42:10",
-    views: 32100,
-    publishedDate: "2024-10-22",
-    speaker: "Dr. Couple Expert",
-    tags: ["Q&A", "marriage tips", "relationship advice", "konseling"],
-    featured: true,
-  },
+
   {
     id: 13,
     title: "Panduan Lengkap: Prosedur Administrasi Pernikahan",
@@ -249,13 +189,13 @@ export const getCategoryColor = (category) => {
     "Teman Nikah": "bg-pink-100 text-pink-700 border-pink-200",
     "Teman Belajar": "bg-blue-100 text-blue-700 border-blue-200",
     "Teman Parenting": "bg-yellow-100 text-yellow-700 border-yellow-200",
-    "Teman Konsultasi": "bg-purple-100 text-purple-700 border-purple-200",
+
     "Panduan Catin": "bg-indigo-100 text-indigo-700 border-indigo-200",
   };
   return colors[category] || "bg-gray-100 text-gray-700 border-gray-200";
 };
 
 // Daftar kategori yang tersedia (sama untuk artikel dan video)
-export const categories = ["Semua", "Teman Finansial", "Teman Nikah", "Teman Belajar", "Teman Parenting", "Teman Konsultasi", "Panduan Catin"];
+export const categories = ["Semua", "Teman Finansial", "Teman Nikah", "Teman Belajar", "Teman Parenting", "Panduan Catin"];
 
 export default videoData;

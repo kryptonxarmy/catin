@@ -266,7 +266,7 @@ const Artikel = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-purple-600">
+      {/* <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Jangan Lewatkan Update Terbaru!</h2>
           <p className="text-xl mb-8 opacity-90">Berlangganan newsletter kami dan dapatkan artikel terbaru serta tips eksklusif langsung di inbox Anda</p>
@@ -274,9 +274,8 @@ const Artikel = () => {
             <input type="email" placeholder="Masukkan email Anda..." className="flex-1 px-6 py-4 rounded-xl text-gray-700 focus:outline-none focus:ring-4 focus:ring-white/30 text-lg" />
             <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors transform hover:scale-105">Berlangganan 💌</button>
           </div>
-          <p className="text-sm mt-4 opacity-70">Gratis dan bisa berhenti berlangganan kapan saja</p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
