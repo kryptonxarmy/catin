@@ -7,19 +7,19 @@ const konselors = [
   {
     name: "Noviana Putri Anggraeni",
     expertise: "Konselor Pernikahan",
-    whatsapp: "+6281234567890",
+    whatsapp: "6285785018268?text=Permisi%2C%20saya%20hendak%20melaksanakan%20bimbingan%20pranikah%2C%20mohon%20bantuannya.",
     avatar: "/photo/novi.jpeg",
   },
   {
     name: "Yanuari Srianturi, M. Pd., Kons.",
     expertise: "Konselor Pernikahan",
-    whatsapp: "+6289633156656",
+    whatsapp: "6289633156656?text=Permisi%2C%20saya%20hendak%20melaksanakan%20bimbingan%20pranikah%2C%20mohon%20bantuannya.",
     avatar: "/photo/yanu.jpeg",
   },
   {
     name: "Ah. Fahri Munir, M. Pd.",
     expertise: "Konselor Pernikahan",
-    whatsapp: "+62895331112309",
+    whatsapp: "62895331112309?text=Permisi%2C%20saya%20hendak%20melaksanakan%20bimbingan%20pranikah%2C%20mohon%20bantuannya.",
     avatar: "/photo/fahri.jpeg",
   },
 ];

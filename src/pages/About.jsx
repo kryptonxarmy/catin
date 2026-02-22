@@ -3,22 +3,22 @@ import React from "react";
 const About = () => {
   const teamMembers = [
     {
-      name: "Dr. Sarah Wijaya",
-      role: "Psikolog Keluarga",
-      image: "👩‍⚕️",
-      description: "Spesialis konseling pra nikah dengan 10+ tahun pengalaman",
+      name: "Noviana Putri Anggraeni",
+      role: "Konselor Pernikahan",
+      image: "/photo/novi.jpeg",
+      description: "Konselor berpengalaman untuk persiapan pra-nikah.",
     },
     {
-      name: "Ahmad Fauzi, M.E",
-      role: "Financial Planner",
-      image: "👨‍💼",
-      description: "Ahli perencanaan keuangan keluarga dan investasi",
+      name: "Yanuari Srianturi, M. Pd., Kons.",
+      role: "Konselor Pernikahan",
+      image: "/photo/yanu.jpeg",
+      description: "Konselor dengan fokus pada komunikasi dan kesiapan pasangan.",
     },
     {
-      name: "Siti Nurhaliza",
-      role: "Wedding Consultant",
-      image: "👰",
-      description: "Konsultan pernikahan dengan pengalaman 8+ tahun",
+      name: "Ah. Fahri Munir, M. Pd.",
+      role: "Konselor Pernikahan",
+      image: "/photo/fahri.jpeg",
+      description: "Konselor yang berfokus pada kesiapan emosional dan praktik hubungan.",
     },
   ];
 
@@ -64,7 +64,7 @@ const About = () => {
           </div>
 
           <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-3xl p-8 border border-blue-200">
-            <div className="text-5xl mb-6 text-center">🌈</div>
+            <div className="text-5xl mb-6 text-center">🚀</div>
             <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Visi Kami</h3>
             <p className="text-gray-600 leading-relaxed text-center">Menjadi platform terdepan dalam bimbingan pra nikah di Indonesia, menciptakan keluarga-keluarga bahagia dan berkualitas.</p>
           </div>
@@ -90,7 +90,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center border border-gray-100">
-                <div className="text-6xl mb-6">{member.image}</div>
+                <img src={member.image} alt={member.name} className="w-28 h-28 rounded-full mx-auto mb-6 object-cover" />
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
                 <p className="text-pink-500 font-medium mb-4">{member.role}</p>
                 <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
