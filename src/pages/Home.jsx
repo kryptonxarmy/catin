@@ -7,19 +7,19 @@ const konselors = [
   {
     name: "Noviana Putri Anggraeni",
     expertise: "Konselor Pernikahan",
-    whatsapp: "6281234567890",
+    whatsapp: "+6281234567890",
     avatar: "/photo/novi.jpeg",
   },
   {
     name: "Yanuari Srianturi, M. Pd., Kons.",
     expertise: "Konselor Pernikahan",
-    whatsapp: "089633156656",
+    whatsapp: "+6289633156656",
     avatar: "/photo/yanu.jpeg",
   },
   {
     name: "Ah. Fahri Munir, M. Pd.",
     expertise: "Konselor Pernikahan",
-    whatsapp: "0895331112309",
+    whatsapp: "+62895331112309",
     avatar: "/photo/fahri.jpeg",
   },
 ];
