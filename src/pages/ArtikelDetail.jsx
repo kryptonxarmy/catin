@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Eye, Heart, Tag } from "lucide-react";
 import { getArticleBySlug, getRelatedArticles, getCategoryColor } from "../data/artikelData.js";
+import panduanCatinPdf from "../data/pdf/MODUL Bimbingan Perkawinan untuk CATIN (Kemenag).pdf";
 
 const ArtikelDetail = () => {
   const { slug } = useParams();
@@ -30,6 +31,7 @@ const ArtikelDetail = () => {
 
   // Artikel rekomendasi berdasarkan kategori
   const rekomendasiArtikel = getRelatedArticles(slug, artikel.category, 3);
+  const isPanduanCatin = artikel.category === "Panduan Catin";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50">
@@ -130,6 +132,22 @@ const ArtikelDetail = () => {
                     lineHeight: "1.8",
                   }}
                 />
+
+                {isPanduanCatin && (
+                  <div className="mt-12">
+                    <h4 className="text-xl font-bold text-gray-800 mb-4">Dokumen: {artikel.title}</h4>
+                    <div className="w-full overflow-hidden rounded-2xl border border-gray-200 bg-gray-50">
+                      <iframe
+                        title={`PDF ${artikel.title}`}
+                        src={panduanCatinPdf}
+                        className="w-full h-[720px]"
+                      />
+                    </div>
+                    <div className="mt-3 text-sm text-gray-500">
+                      Jika PDF tidak tampil, <a href={panduanCatinPdf} target="_blank" rel="noreferrer" className="text-blue-600 hover:text-blue-700">buka di tab baru</a>.
+                    </div>
+                  </div>
+                )}
 
                 {/* Tags */}
                 <div className="mt-12 pt-8 border-t border-gray-200">
