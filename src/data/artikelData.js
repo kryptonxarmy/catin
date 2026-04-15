@@ -5,13 +5,23 @@ import temanParentingArticles from "./artikel/TemanParenting.js";
 import panduanCatinArticles from "./artikel/PanduanCatin.js";
 
 // Data dummy artikel untuk website TemanCatin
-export const artikelData = [
+// Gabungkan semua array artikel lalu deduplikasi berdasarkan `slug` (jaga entri pertama)
+const combinedArticles = [
   ...temanBelajarArticles,
   ...temanFinansialArticles,
   ...temanNikahArticles,
   ...temanParentingArticles,
   ...panduanCatinArticles,
-].sort((a, b) => a.id - b.id);
+];
+
+const artikelMap = new Map();
+for (const a of combinedArticles) {
+  if (!artikelMap.has(a.slug)) {
+    artikelMap.set(a.slug, a);
+  }
+}
+
+export const artikelData = Array.from(artikelMap.values()).sort((a, b) => a.id - b.id);
 
 // Fungsi helper untuk mengambil artikel berdasarkan kategori
 export const getArticlesByCategory = (category) => {

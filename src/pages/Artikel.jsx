@@ -16,14 +16,18 @@ const Artikel = () => {
     }
   }, [searchParams]);
 
-  // Filter artikel berdasarkan kategori dan pencarian
-  const filteredArticles = getArticlesByCategory(selectedCategory).filter(
-    (article) => article.title.toLowerCase().includes(searchQuery.toLowerCase()) || article.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) || article.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
-  );
-
   // Ambil artikel featured
   const featuredArticlesList = getFeaturedArticles();
   const featuredArticle = featuredArticlesList[0]; // Artikel featured utama
+
+  // Filter artikel berdasarkan kategori dan pencarian, lalu keluarkan featured agar tidak tampil dua kali
+  const filteredArticles = getArticlesByCategory(selectedCategory)
+    .filter((article) =>
+      article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      article.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      article.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+    )
+    .filter((a) => a.slug !== featuredArticle?.slug);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50">
@@ -105,12 +109,12 @@ const Artikel = () => {
                 {/* Content */}
                 <div className="p-12 flex flex-col justify-center">
                   <div className="flex items-center space-x-6 mb-6 text-sm text-gray-500">
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-200 to-pink-200 flex items-center justify-center mr-2 overflow-hidden">
                         {featuredArticle.author?.avatar ? <img src={featuredArticle.author.avatar} alt={featuredArticle.author.name} className="w-full h-full object-cover" /> : <User size={14} />}
                       </div>
                       {featuredArticle.author?.name || featuredArticle.author}
-                    </div>
+                    </div> */}
                     <div className="flex items-center">
                       <Calendar size={16} className="mr-2" />
                       {featuredArticle.date}
@@ -175,7 +179,7 @@ const Artikel = () => {
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredArticles.map((artikel) => (
-              <article key={artikel.id} className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 cursor-pointer group border border-gray-100 overflow-hidden">
+              <article key={artikel.slug} className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 cursor-pointer group border border-gray-100 overflow-hidden">
                 {/* Article Image */}
                 <div className="relative h-56 bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden">
                   <img
@@ -212,12 +216,12 @@ const Artikel = () => {
                   {/* Meta Information */}
                   <div className="flex items-center justify-between mb-3 text-xs text-gray-500">
                     <div className="flex items-center space-x-3">
-                      <div className="flex items-center">
+                      {/* <div className="flex items-center">
                         <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-200 to-pink-200 flex items-center justify-center mr-1 overflow-hidden">
                           {artikel.author?.avatar ? <img src={artikel.author.avatar} alt={artikel.author.name} className="w-full h-full object-cover" /> : <User size={10} />}
                         </div>
                         {artikel.author?.name || artikel.author}
-                      </div>
+                      </div> */}
                       <div className="flex items-center">
                         <Calendar size={12} className="mr-1" />
                         {artikel.date}
@@ -264,18 +268,6 @@ const Artikel = () => {
           )}
         </div>
       </section>
-
-      {/* Newsletter Section */}
-      {/* <section className="py-20 px-6 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-4xl font-bold mb-6">Jangan Lewatkan Update Terbaru!</h2>
-          <p className="text-xl mb-8 opacity-90">Berlangganan newsletter kami dan dapatkan artikel terbaru serta tips eksklusif langsung di inbox Anda</p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-            <input type="email" placeholder="Masukkan email Anda..." className="flex-1 px-6 py-4 rounded-xl text-gray-700 focus:outline-none focus:ring-4 focus:ring-white/30 text-lg" />
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors transform hover:scale-105">Berlangganan 💌</button>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 };

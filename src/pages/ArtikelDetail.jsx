@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Eye, Heart, Tag } from "lucide-react";
 import { getArticleBySlug, getRelatedArticles, getCategoryColor } from "../data/artikelData.js";
 import panduanCatinPdf from "../data/pdf/MODUL Bimbingan Perkawinan untuk CATIN (Kemenag).pdf";
+import fondasiKeluargaPdf from "../data/pdf/Fondasi Keluarga Sakinah (Kemenag).pdf";
 
 const ArtikelDetail = () => {
   const { slug } = useParams();
@@ -32,6 +33,20 @@ const ArtikelDetail = () => {
   // Artikel rekomendasi berdasarkan kategori
   const rekomendasiArtikel = getRelatedArticles(slug, artikel.category, 3);
   const isPanduanCatin = artikel.category === "Panduan Catin";
+  const pdfOptions = [
+    {
+      id: "modul-bimwin",
+      title: "MODUL Bimbingan Perkawinan untuk CATIN (Kemenag)",
+      src: panduanCatinPdf,
+    },
+    {
+      id: "fondasi-sakinah",
+      title: "Fondasi Keluarga Sakinah (Kemenag)",
+      src: fondasiKeluargaPdf,
+    },
+  ];
+  const [selectedPdfId, setSelectedPdfId] = useState(pdfOptions[0].id);
+  const selectedPdf = pdfOptions.find((item) => item.id === selectedPdfId);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50">
@@ -61,17 +76,19 @@ const ArtikelDetail = () => {
 
           {/* Meta Information */}
           <div className="flex flex-wrap items-center gap-6 text-white/80">
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white mr-3 overflow-hidden">
-                {artikel.author?.avatar ? <img src={artikel.author.avatar} alt={artikel.author.name} className="w-full h-full object-cover" /> : <User size={20} />}
-              </div>
-              <div>
-                <div className="flex items-center">
-                  <span className="font-semibold">{artikel.author?.name || artikel.author}</span>
+            {/* {!isPanduanCatin && (
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white mr-3 overflow-hidden">
+                  {artikel.author?.avatar ? <img src={artikel.author.avatar} alt={artikel.author.name} className="w-full h-full object-cover" /> : <User size={20} />}
                 </div>
-                {artikel.author?.specialty && <div className="text-sm text-white/60">{artikel.author.specialty}</div>}
+                <div>
+                  <div className="flex items-center">
+                    <span className="font-semibold">{artikel.author?.name || artikel.author}</span>
+                  </div>
+                  {artikel.author?.specialty && <div className="text-sm text-white/60">{artikel.author.specialty}</div>}
+                </div>
               </div>
-            </div>
+            )} */}
             <div className="flex items-center">
               <Calendar size={16} className="mr-2" />
               {artikel.date}
@@ -124,28 +141,52 @@ const ArtikelDetail = () => {
                 </div>
 
                 {/* Article Content */}
-                <div
-                  className="prose prose-lg max-w-none"
-                  dangerouslySetInnerHTML={{ __html: artikel.content }}
-                  style={{
-                    fontFamily: "Inter, sans-serif",
-                    lineHeight: "1.8",
-                  }}
-                />
+                {!isPanduanCatin && (
+                  <div
+                    className="prose prose-lg max-w-none"
+                    dangerouslySetInnerHTML={{ __html: artikel.content }}
+                    style={{
+                      fontFamily: "Inter, sans-serif",
+                      lineHeight: "1.8",
+                    }}
+                  />
+                )}
 
                 {isPanduanCatin && (
-                  <div className="mt-12">
-                    <h4 className="text-xl font-bold text-gray-800 mb-4">Dokumen: {artikel.title}</h4>
-                    <div className="w-full overflow-hidden rounded-2xl border border-gray-200 bg-gray-50">
-                      <iframe
-                        title={`PDF ${artikel.title}`}
-                        src={panduanCatinPdf}
-                        className="w-full h-[720px]"
-                      />
+                  <div className="mt-2">
+                    <h4 className="text-xl font-bold text-gray-800 mb-4">Dokumen Panduan</h4>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      {pdfOptions.map((item) => (
+                        <button
+                          key={item.id}
+                          type="button"
+                          onClick={() => setSelectedPdfId(item.id)}
+                          className={`text-left p-4 rounded-2xl border transition-all ${
+                            selectedPdfId === item.id
+                              ? "border-blue-500 bg-blue-50 shadow"
+                              : "border-gray-200 bg-white hover:bg-gray-50"
+                          }`}
+                        >
+                          <div className="font-semibold text-gray-800 mb-1">{item.title}</div>
+                          <div className="text-sm text-gray-500">Klik untuk melihat PDF</div>
+                        </button>
+                      ))}
                     </div>
-                    <div className="mt-3 text-sm text-gray-500">
-                      Jika PDF tidak tampil, <a href={panduanCatinPdf} target="_blank" rel="noreferrer" className="text-blue-600 hover:text-blue-700">buka di tab baru</a>.
-                    </div>
+
+                    {selectedPdf && (
+                      <div className="mt-6">
+                        <div className="w-full overflow-hidden rounded-2xl border border-gray-200 bg-gray-50">
+                          <iframe
+                            title={`PDF ${selectedPdf.title}`}
+                            src={selectedPdf.src}
+                            className="w-full h-[720px]"
+                          />
+                        </div>
+                        <div className="mt-3 text-sm text-gray-500">
+                          Jika PDF tidak tampil, <a href={selectedPdf.src} target="_blank" rel="noreferrer" className="text-blue-600 hover:text-blue-700">buka di tab baru</a>.
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
 
@@ -168,23 +209,26 @@ const ArtikelDetail = () => {
                 </div>
               </div>
 
-              {/* Author Bio */}
-              <div className="bg-white rounded-3xl shadow-xl p-8 mt-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                  <User size={24} className="mr-2" />
-                  Tentang Penulis
-                </h3>
-                <div className="flex items-start space-x-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-200 to-pink-200 rounded-2xl flex items-center justify-center text-3xl shadow-lg overflow-hidden flex-shrink-0">
-                    {artikel.author?.avatar ? <img src={artikel.author.avatar} alt={artikel.author.name} className="w-full h-full object-cover" /> : <User size={24} />}
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-xl font-bold text-gray-800 mb-2">{artikel.author?.name || artikel.author}</h4>
-                    {artikel.author?.specialty && <p className="text-blue-600 font-medium mb-2">{artikel.author.specialty}</p>}
-                    <p className="text-gray-600 leading-relaxed">{artikel.author?.bio || "Penulis berpengalaman di bidangnya dengan dedikasi tinggi untuk berbagi ilmu dan pengalaman kepada pembaca."}</p>
-                  </div>
-                </div>
-              </div>
+              {!isPanduanCatin && (
+                <>
+                </>
+                // <div className="bg-white rounded-3xl shadow-xl p-8 mt-8">
+                //   <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                //     <User size={24} className="mr-2" />
+                //     Tentang Penulis
+                //   </h3>
+                //   <div className="flex items-start space-x-6">
+                //     <div className="w-20 h-20 bg-gradient-to-br from-blue-200 to-pink-200 rounded-2xl flex items-center justify-center text-3xl shadow-lg overflow-hidden flex-shrink-0">
+                //       {artikel.author?.avatar ? <img src={artikel.author.avatar} alt={artikel.author.name} className="w-full h-full object-cover" /> : <User size={24} />}
+                //     </div>
+                //     <div className="flex-1">
+                //       <h4 className="text-xl font-bold text-gray-800 mb-2">{artikel.author?.name || artikel.author}</h4>
+                //       {artikel.author?.specialty && <p className="text-blue-600 font-medium mb-2">{artikel.author.specialty}</p>}
+                //       <p className="text-gray-600 leading-relaxed">{artikel.author?.bio || "Penulis berpengalaman di bidangnya dengan dedikasi tinggi untuk berbagi ilmu dan pengalaman kepada pembaca."}</p>
+                //     </div>
+                //   </div>
+                // </div>
+              )}
             </div>
 
             {/* Sidebar */}

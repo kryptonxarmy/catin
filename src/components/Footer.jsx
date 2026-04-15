@@ -39,11 +39,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/layanan" className="text-gray-600 hover:text-[#a2cbe1] transition-colors">
-                  Layanan
-                </a>
-              </li>
-              <li>
                 <a href="/artikel" className="text-gray-600 hover:text-[#a2cbe1] transition-colors">
                   Artikel
                 </a>

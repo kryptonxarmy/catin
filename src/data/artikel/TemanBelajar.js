@@ -1,7 +1,7 @@
 // Data artikel kategori Teman Belajar
 export const temanBelajarArticles = [
   {
-    id: 8,
+    id: 812,
     title: "Benarkah Jatuh Cinta Bisa Bikin Bodoh? Ini Penjelasan Ilmiahnya",
     slug: "benarkah-jatuh-cinta-bisa-bikin-bodoh",
     excerpt:
@@ -32,12 +32,11 @@ export const temanBelajarArticles = [
     },
     date: "01 Dec 2024",
     tags: ["jatuh cinta", "biologi", "psikologi", "hormon"],
-    featured: true,
     views: 1120,
     likes: 230,
   },
   {
-  "id": 9,
+  "id": 912,
   "title": "Cara Mengendalikan Emosi agar Tidak Merugikan Diri Sendiri",
   "slug": "cara-mengendalikan-emosi-agar-tidak-merugikan-diri-sendiri",
   "excerpt": "Merasa sedih, kecewa, atau marah adalah hal yang normal. Namun, jika Anda tidak tahu bagaimana cara mengendalikan emosi Anda, hal tersebut dapat merugikan diri sendiri bahkan orang lain. Lantas, apa saja cara mengendalikan emosi?",
@@ -92,12 +91,11 @@ export const temanBelajarArticles = [
   },
   "date": "12 Nov 2024",
   "tags": ["emosi", "selfhealing", "depresi", "psikologi"],
-  "featured": true,
   "views": 1030,
   "likes": 215
 },
 {
-  "id": 9,
+  "id": 97,
   "title": "Emosi Manusia: Pengertian, Jenis, dan Fungsinya",
   "slug": "emosi-manusia-pengertian-jenis-dan-fungsinya",
   "excerpt": "Emosi adalah perasaan atau afeksi yang timbul dalam diri seseorang sebagai respons terhadap suatu situasi atau stimulus tertentu.",
@@ -299,12 +297,11 @@ export const temanBelajarArticles = [
   },
   "date": "12 Nov 2024",
   "tags": ["emosi", "selfhealing", "depresi", "psikologi"],
-  "featured": true,
   "views": 1030,
   "likes": 215
 }, 
 {
-  "id": 9,
+  "id": 99,
   "title": "Memahami Cinta melalui Lensa Neurosains",
   "slug": "memahami-cinta-melalui-lensa-neurosains",
   "excerpt": "Cinta, sebagai fenomena kompleks yang telah menginspirasi puisi, lagu, dan kisah-kisah epik, seringkali dipahami secara emosional dan filosofis. Namun, melalui lensa neurosains, Memahami esensi cinta tidak hanya tentang perasaan yang melambung tinggi, tetapi juga tentang proses kerja sistem saraf yang mendasarinya, sebagai sebuah fenomena biologis yang melibatkan interaksi kompleks kimia otak berupa hormon dan neurotransmitter di dalam otak manusia.",
@@ -336,53 +333,70 @@ export const temanBelajarArticles = [
   },
   "date": "12 Nov 2024",
   "tags": ["emosi", "selfhealing", "depresi", "psikologi"],
-  "featured": true,
   "views": 1030,
   "likes": 215
 },
-{   
+{
   "id": 9,
-  "title": "Cara Mengendalikan Emosi agar Tidak Merugikan Diri Sendiri",
-  "slug": "cara-mengendalikan-emosi-agar-tidak-merugikan-diri-sendiri",
-  "excerpt": "Merasa sedih, kecewa, atau marah adalah hal yang normal. Namun, jika Anda tidak tahu bagaimana cara mengendalikan emosi Anda, hal tersebut dapat merugikan diri sendiri bahkan orang lain. Lantas, apa saja cara mengendalikan emosi?",
+  "title": "Memahami Watak",
+  "slug": "memahami-watak",
+  "excerpt": "Cinta, sebagai fenomena kompleks yang telah menginspirasi puisi, lagu, dan kisah-kisah epik, seringkali dipahami secara emosional dan filosofis. Namun, melalui lensa neurosains, Memahami esensi cinta tidak hanya tentang perasaan yang melambung tinggi, tetapi juga tentang proses kerja sistem saraf yang mendasarinya, sebagai sebuah fenomena biologis yang melibatkan interaksi kompleks kimia otak berupa hormon dan neurotransmitter di dalam otak manusia.",
   "content": `
     <div class="article-content">
-      <h2 class="text-2xl font-bold mb-4 text-gray-800">Emosi adalah Ekspresi Normal Manusia</h2>
-      <p class="mb-6 text-gray-600 leading-relaxed">Emosi adalah ekspresi normal manusia atas berbagai hal yang terjadi dalam hidupnya. Misalnya, ketika Anda merasa senang saat mendapat hadiah, merasa kesal saat terjebak macet, atau merasa sedih saat kehilangan seseorang yang Anda cintai atau setelah menjalani PHK.</p>
-      
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">Berbagai Emosi yang Dirasakan Mempengaruhi Tindakan Anda</h3>
-      <p class="mb-6 text-gray-600 leading-relaxed">Berbagai emosi yang Anda rasakan ini akan berpengaruh pada tindakan Anda. Jika Anda sedang merasakan emosi yang positif, maka tindakan yang mengikutinya juga akan positif, sebaliknya, emosi negatif akan cenderung membuat Anda berperilaku negatif pula.</p>
-      
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">Ekspresi Emosi Negatif Bisa Membahayakan</h3>
-      <p class="mb-6 text-gray-600 leading-relaxed">Ekspresi emosi negatif bahkan dapat membahayakan hubungan pekerjaan, pertemanan, hingga kesehatan diri sendiri. Maka dari itu, penting bagi Anda untuk mengetahui cara mengendalikan emosi atau cara mengekspresikannya secara tepat.</p>
-      
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">Beberapa Cara Mengendalikan Emosi Yang Bisa Anda Coba</h3>
-      <h4 class="text-lg font-semibold mb-3 text-gray-800">1. Berpikiran dan Bersikap Positif</h4>
-      <p class="mb-6 text-gray-600 leading-relaxed">Anda mungkin tidak dapat mengubah situasi buruk yang menimpa Anda, namun Anda bisa mengubah sudut pandang Anda untuk melihat situasi tersebut menjadi lebih positif. Misalnya, Anda merasa kecewa karena mendapat banyak kritik pada presentasi yang baru saja Anda berikan. Pada situasi seperti ini, cobalah pikirkan sisi positifnya bahwa kritik tersebut sebenarnya dapat bermanfaat bagi pertumbuhan karier Anda kelak.</p>
-      <p class="mb-6 text-gray-600 leading-relaxed">Selain itu, coba tenangkan diri Anda dengan mengambil napas panjang lalu tutup mata Anda. Sadarilah keberadaan, perasaan, dan pikiran Anda saat ini, termasuk keadaan sekitar Anda. Hal ini dapat membuat Anda lebih sadar dan bersikap lebih positif dalam merespons segala sesuatu.</p>
-      
-      <h4 class="text-lg font-semibold mb-3 text-gray-800">2. Hindari Situasi yang Bisa Memicu Munculnya Emosi Negatif</h4>
-      <p class="mb-6 text-gray-600 leading-relaxed">Hindarilah situasi yang bisa membuat Anda merasakan emosi negatif. Sebagai contoh, jika Anda mudah kesal saat terburu-buru atau terjebak macet, Anda dapat mengatur waktu untuk berangkat saat arus jalan sedang tidak terlalu macet.</p>
-      <p class="mb-6 text-gray-600 leading-relaxed">Bila emosi tersebut datang saat melihat media sosial atau bahkan datang saat bersama orang-orang tertentu, tidak ada salahnya Anda beristirahat sejenak dari log in media sosial atau bertemu dengan orang-orang tersebut.</p>
-      
-      <h4 class="text-lg font-semibold mb-3 text-gray-800">3. Lakukan Aktivitas yang Menyenangkan</h4>
-      <p class="mb-6 text-gray-600 leading-relaxed">Melakukan aktivitas yang menyenangkan dapat membawa pengaruh positif bagi hidup Anda, misalnya: Berolahraga. Kegiatan ini tidak hanya menyenangkan, namun juga merupakan sarana untuk mengelola stres. Yoga, tai chi, dan aerobik merupakan beberapa contoh latihan fisik yang baik bagi kesehatan mental.</p>
-      <p class="mb-6 text-gray-600 leading-relaxed">Mempelajari kemampuan baru seperti mempelajari bahasa atau pun alat musik dapat membangkitkan kepercayaan diri Anda dan menjadi salah satu cara yang baik untuk mengendalikan emosi.</p>
-      <p class="mb-6 text-gray-600 leading-relaxed">Menjaga komunikasi dengan orang-orang terdekat Anda, seperti keluarga, sahabat, atau tetangga, yang bisa membuat Anda nyaman. Keluarga dan sahabat bisa menjadi tempat berbagi ketika Anda sedang menghadapi kesulitan atau permasalahan yang berat.</p>
-      <p class="mb-6 text-gray-600 leading-relaxed">Memberikan senyum, waktu, atau bantuan untuk orang lain. Semua hal ini dapat membawa pengaruh positif bagi diri Anda dan juga orang lain. Cobalah untuk mengikuti program bakti sosial, menjadi relawan, atau mendonorkan darah.</p>
-      
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">Menjaga Kesehatan Jiwa dan Raga</h3>
-      <p class="mb-6 text-gray-600 leading-relaxed">Menjaga kesehatan jiwa sama pentingnya dengan menjaga kesehatan fisik karena keduanya saling memengaruhi. Jika emosi Anda terganggu, hindari makan berlebihan saat emosi, karena tubuh menjadi lebih rentan terhadap berbagai penyakit, seperti nyeri dada dan tekanan darah tinggi.</p>
-      <p class="mb-6 text-gray-600 leading-relaxed">Seseorang dapat dikatakan sehat secara emosional ketika ia berhasil mengelola masalah sehari-harinya, misalnya stres pekerjaan, kebiasaan buruk, atau masalah hubungan pertemanan, yang bisa berdampak pada kesehatan jiwa dan raga.</p>
-      
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">Kenali Gejala Depresi</h3>
-      <p class="mb-6 text-gray-600 leading-relaxed">Namun, waspadai jika ternyata yang Anda rasakan bukan sekadar perubahan emosi, melainkan pertanda depresi. Kenali gejala depresi yang biasanya ditandai dengan penurunan suasana hati yang berlangsung lebih dari dua minggu, merasa putus asa, kelelahan yang berlebihan, tidak dapat berkonsentrasi, hilang nafsu makan atau justru makan terlalu banyak, susah tidur atau terus ingin tidur, bahkan terpikir untuk mengakhiri hidup.</p>
-      
-      <h3 class="text-xl font-semibold mb-3 text-gray-800">Terapkan Cara Mengendalikan Emosi untuk Kesehatan Jiwa dan Raga</h3>
-      <p class="mb-6 text-gray-600 leading-relaxed">Cobalah terapkan tiga cara mengendalikan emosi di atas guna menjaga kesehatan jiwa dan juga raga Anda. Jika Anda merasakan adanya gejala depresi, jangan ragu untuk segera berkonsultasi pada psikolog atau dokter.</p>
-      <p class="mb-6 text-gray-600 leading-relaxed">Terakhir diperbarui: 12 November 2024 <br>
-         Ditinjau oleh: dr. Kevin Adrian
-    </p>
+            <p><strong>Memahami Watak, Pola Asuh, dan Risiko Adiksi: Perspektif Dr. Aisyah Dahlan</strong></p>
+<p><span style="font-weight: 400;">Dalam sebuah perbincangan santai namun penuh makna, Dr. Aisyah Dahlan berbagi wawasan mendalam tentang dunia adiksi narkoba, karakter manusia, hingga pola pengasuhan anak. Dengan pengalaman lebih dari 27 tahun sebagai konselor adiksi, ia menegaskan bahwa persoalan narkoba masih menjadi tantangan serius karena jenis zat adiktif terus berkembang dan semakin beragam.</span></p>
+<p><strong>Narkoba dan Lingkaran Ketergantungan</strong></p>
+<p><span style="font-weight: 400;">Menurut Dr. Aisyah, narkoba pada dasarnya adalah zat yang memberikan efek euforia&mdash;perasaan senang yang berlebihan. Namun, di balik itu terdapat risiko besar berupa ketergantungan yang sulit diputus. Ia menjelaskan bahwa banyak individu terjerumus bukan semata karena kurangnya kasih sayang, tetapi karena adanya rasa kesepian dan kebingungan emosional yang tidak tersalurkan.</span></p>
+<p><span style="font-weight: 400;">Faktor terbesar biasanya terjadi ketika seseorang:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Berada di </span><strong>waktu yang salah</strong><span style="font-weight: 400;"> (misalnya sedang stres atau kecewa),</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Bertemu dengan </span><strong>orang yang salah</strong><span style="font-weight: 400;">, dan</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Mendapatkan </span><strong>solusi yang salah</strong><span style="font-weight: 400;">.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Prosesnya pun tidak instan. Pelaku biasanya membangun hubungan kepercayaan terlebih dahulu sebelum akhirnya menawarkan narkoba sebagai &ldquo;solusi&rdquo; agar merasa lebih tenang.</span></p>
+<p><strong>Peran Keluarga sebagai Benteng Utama</strong></p>
+<p><span style="font-weight: 400;">Salah satu poin penting yang ditekankan adalah pentingnya keluarga sebagai sumber kebahagiaan utama. Anak yang merasa aman, nyaman, dan bahagia di rumah cenderung tidak mudah tergoda oleh narkoba. Ketika kebutuhan emosional terpenuhi, tawaran &ldquo;kebahagiaan instan&rdquo; dari luar menjadi tidak menarik.</span></p>
+<p><span style="font-weight: 400;">Sebaliknya, ketika anak merasa kesepian atau tidak dipahami, mereka lebih rentan mencari pelarian di luar, termasuk melalui zat adiktif.</span></p>
+<p><strong>Rehabilitasi: Jalan Panjang Menuju Pulih</strong></p>
+<p><span style="font-weight: 400;">Bagi mereka yang sudah terjerumus, proses pemulihan bukanlah hal mudah. Rehabilitasi menjadi langkah utama, dengan durasi minimal tiga bulan, bahkan idealnya hingga satu tahun.</span></p>
+<p><span style="font-weight: 400;">Pada fase awal, terutama 10&ndash;14 hari pertama, pecandu akan mengalami gejala putus zat (withdrawal) yang sangat berat, baik secara fisik maupun mental, tergantung jenis narkoba yang digunakan. Pendampingan intensif, terutama dari mantan pecandu yang sudah pulih, terbukti lebih efektif karena adanya pemahaman pengalaman yang sama.</span></p>
+<p><span style="font-weight: 400;">Namun, proses tidak berhenti setelah keluar dari rehabilitasi. Mantan pecandu perlu:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Mengubah lingkungan pergaulan,</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Membangun kebiasaan baru yang sehat,</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Rutin mengikuti sesi konsultasi dan dukungan komunitas.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Pemulihan adalah perjalanan seumur hidup yang membutuhkan kesadaran dan komitmen tinggi.</span></p>
+<p><strong>Memahami Watak: Kunci Parenting yang Efektif</strong></p>
+<p><span style="font-weight: 400;">Selain membahas adiksi, Dr. Aisyah juga mengulas pentingnya memahami watak anak dalam pola asuh. Ia menjelaskan bahwa watak bersifat genetik dan secara umum terbagi dalam beberapa tipe, seperti introvert, ekstrovert, dan ambivert.</span></p>
+<p><span style="font-weight: 400;">Sekitar 25% manusia memiliki tipe &ldquo;pemikir dan pengamat&rdquo;&mdash;cenderung introvert, menyukai ketenangan, detail, dan perencanaan. Anak dengan tipe ini:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Lebih suka menyendiri,</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Memiliki imajinasi kuat,</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Cenderung perfeksionis,</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Memiliki sedikit teman, tetapi berkualitas.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Menurutnya, kondisi ini bukan masalah. Orang tua tidak perlu memaksa anak untuk menjadi lebih sosial secara berlebihan. Justru, kekuatan anak perlu diarahkan sesuai karakter alaminya.</span></p>
+<p><span style="font-weight: 400;">Namun, tipe ini juga memiliki tantangan seperti overthinking, rasa cemas, dan takut salah. Di sinilah peran orang tua penting untuk memberikan dukungan emosional tanpa tekanan.</span></p>
+<p><strong>Dinamika Pasangan dan Perbedaan Watak</strong></p>
+<p><span style="font-weight: 400;">Dalam kehidupan berpasangan, perbedaan watak justru menjadi kekuatan. Dr. Aisyah menjelaskan bahwa mayoritas pasangan memiliki karakter yang saling melengkapi&mdash;misalnya satu dominan, satu lebih tenang.</span></p>
+<p><span style="font-weight: 400;">Keseimbangan ini penting untuk:</span></p>
+<ul>
+  <li style="font-weight: 400;"><span style="font-weight: 400;">Menghindari konflik berkepanjangan,</span></li>
+  <li style="font-weight: 400;"><span style="font-weight: 400;">Memberikan contoh jelas bagi anak,</span></li>
+  <li style="font-weight: 400;"><span style="font-weight: 400;">Menciptakan harmoni dalam rumah tangga.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Ia juga menyoroti bahwa laki-laki secara biologis memiliki dorongan kuat untuk melindungi, yang berkaitan dengan fungsi otak seperti hipotalamus. Hal ini memengaruhi perilaku, termasuk kebutuhan untuk dihargai dan tidak dipermalukan di depan umum.</span></p>
+<p><strong>Kesimpulan</strong></p>
+<p><span style="font-weight: 400;">Dari pembahasan ini, terlihat bahwa persoalan adiksi, parenting, hingga hubungan pasangan saling berkaitan melalui satu benang merah: </span><strong>pemahaman terhadap manusia itu sendiri</strong><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Memahami karakter, kebutuhan emosional, serta cara kerja otak dapat membantu:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Mencegah anak terjerumus ke dalam perilaku berisiko,</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Mengoptimalkan potensi diri anak,</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Membangun hubungan yang sehat dalam keluarga.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Pada akhirnya, keluarga yang hangat, komunikasi yang terbuka, dan penerimaan terhadap perbedaan adalah fondasi utama untuk menciptakan individu yang sehat&mdash;baik secara mental maupun sosial.</span></p>
+<!-- Comments are visible in the HTML source only -->
     </div>
   `,
   "image": "https://images.unsplash.com/photo-1579546926041-cd7cb7e5dffb?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
@@ -396,7 +410,6 @@ export const temanBelajarArticles = [
   },
   "date": "12 Nov 2024",
   "tags": ["emosi", "selfhealing", "depresi", "psikologi"],
-  "featured": true,
   "views": 1030,
   "likes": 215
 }

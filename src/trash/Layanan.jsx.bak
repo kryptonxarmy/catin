@@ -1,9 +1,0 @@
-// Backup of Layanan.jsx before removal
-import React from "react";
-import { colorClasses } from "../colors.js";
-
-const Layanan = () => {
-  // ...existing code...
-}
-
-export default Layanan;
