@@ -33,6 +33,12 @@ const Navbar = () => {
           <Link to="/tentang" className="text-gray-700 hover:text-[#eea09e] font-medium transition-colors duration-300 hover:scale-105 transform">
             Tentang
           </Link>
+          <Link to="/uji-kesiapan" className="text-gray-700 hover:text-[#7bd389] font-medium transition-colors duration-300 hover:scale-105 transform">
+            Tes Kesiapan
+          </Link>
+          <Link to="/konsultasi" className="text-gray-700 hover:text-[#25D366] font-medium transition-colors duration-300 hover:scale-105 transform">
+            Konsultasi
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -58,6 +64,12 @@ const Navbar = () => {
             </Link>
             <Link to="/tentang" className="px-6 py-2 text-gray-700 font-medium hover:bg-blue-50" onClick={() => setMobileOpen(false)}>
               Tentang
+            </Link>
+            <Link to="/uji-kesiapan" className="px-6 py-2 text-gray-700 font-medium hover:bg-blue-50" onClick={() => setMobileOpen(false)}>
+              Tes Kesiapan
+            </Link>
+            <Link to="/konsultasi" className="px-6 py-2 text-gray-700 font-medium hover:bg-blue-50" onClick={() => setMobileOpen(false)}>
+              Konsultasi
             </Link>
           </div>
         )}

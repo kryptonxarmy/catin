@@ -10,11 +10,12 @@ import VideoDetail from "./pages/VideoDetail.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import UjiKesiapan from "./pages/UjiKesiapan.jsx";
+import Konsultasi from "./pages/Konsultasi.jsx";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-transparent">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +26,7 @@ function App() {
           <Route path="/tentang" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/uji-kesiapan" element={<UjiKesiapan />} />
+          <Route path="/konsultasi" element={<Konsultasi />} />
         </Routes>
         <Footer />
       </div>

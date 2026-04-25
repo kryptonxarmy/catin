@@ -3,22 +3,22 @@ import { Check, X, Heart, Brain, Users, DollarSign, Sparkles, RotateCcw, Message
 
 const konselors = [
   {
-    name: "Dr. Sari Finansial",
-    expertise: "Keuangan & Investasi",
-    whatsapp: "6281234567890",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b606?w=100&h=100&fit=crop&crop=face",
+    name: "Noviana Putri Anggraeni",
+    expertise: "Konselor Pernikahan",
+    whatsapp: "6285785018268?text=Permisi%2C%20saya%20hendak%20melaksanakan%20bimbingan%20pranikah%2C%20mohon%20bantuannya.",
+    avatar: "/photo/novi.jpeg",
   },
   {
-    name: "Ustadz Budi Nikah",
-    expertise: "Persiapan & Konseling Nikah",
-    whatsapp: "6289876543210",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    name: "Yanuari Srianturi, M. Pd., Kons.",
+    expertise: "Konselor Pernikahan",
+    whatsapp: "6289633156656?text=Permisi%2C%20saya%20hendak%20melaksanakan%20bimbingan%20pranikah%2C%20mohon%20bantuannya.",
+    avatar: "/photo/yanu.jpeg",
   },
   {
-    name: "Dr. Lisa Parenting",
-    expertise: "Parenting & Psikologi Anak",
-    whatsapp: "6281122334455",
-    avatar: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=100&h=100&fit=crop&crop=face",
+    name: "Ah. Fahri Munir, M. Pd.",
+    expertise: "Konselor Pernikahan",
+    whatsapp: "62895331112309?text=Permisi%2C%20saya%20hendak%20melaksanakan%20bimbingan%20pranikah%2C%20mohon%20bantuannya.",
+    avatar: "/photo/fahri.jpeg",
   },
 ];
 
