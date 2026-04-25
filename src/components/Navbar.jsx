@@ -7,29 +7,29 @@ const Navbar = () => {
 
   return (
     <nav className={`flex justify-center items-center px-4 md:px-8 ${colorClasses.bg.primary.white} shadow-lg sticky top-0 z-50 border-b-2 ${colorClasses.border.blue[200]}`}>
-      <div className="flex items-center justify-center gap-12 max-w-6xl w-full relative">
+      <div className="flex items-center justify-between max-w-6xl w-full relative">
         {/* Left Menu Items */}
-        <div className="hidden md:flex gap-8 items-center">
+        <div className="hidden md:flex gap-8 items-center flex-1 justify-end">
           <Link to="/" className="text-gray-700 hover:text-[#eea09e] font-medium transition-colors duration-300 hover:scale-105 transform">
             Beranda
           </Link>
           <Link to="/artikel" className="text-gray-700 hover:text-[#eea09e] font-medium transition-colors duration-300 hover:scale-105 transform">
             Artikel
           </Link>
+          <Link to="/video" className="text-gray-700 hover:text-[#a2cbe1] font-medium transition-colors duration-300 hover:scale-105 transform">
+            Video
+          </Link>
         </div>
 
         {/* Center Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center flex-shrink-0 mx-8">
           <Link to="/">
             <img src="/logo_catin-removebg-preview.png" alt="TemanCatin Logo" className="h-24 w-auto" />
           </Link>
         </div>
 
         {/* Right Menu Items */}
-        <div className="hidden md:flex gap-8 items-center">
-          <Link to="/video" className="text-gray-700 hover:text-[#a2cbe1] font-medium transition-colors duration-300 hover:scale-105 transform">
-            Video
-          </Link>
+        <div className="hidden md:flex gap-8 items-center flex-1 justify-start">
           <Link to="/tentang" className="text-gray-700 hover:text-[#eea09e] font-medium transition-colors duration-300 hover:scale-105 transform">
             Tentang
           </Link>
