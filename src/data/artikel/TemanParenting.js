@@ -1,3 +1,7 @@
+import parenting1 from "../images/Teman Parenting/parenting1.jpeg";
+import parenting2 from "../images/Teman Parenting/parenting2.jpeg";
+import parenting3 from "../images/Teman Parenting/parenting3.jpeg";
+
 // Data artikel kategori Teman Parenting
 export const temanParentingArticles = [
  {
@@ -57,7 +61,7 @@ export const temanParentingArticles = [
 <!-- Comments are visible in the HTML source only --></div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      parenting1,
     category: "Teman Parenting",
     readTime: "8 min",
     author: {
@@ -113,7 +117,7 @@ export const temanParentingArticles = [
 <!-- Comments are visible in the HTML source only --></div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      parenting3,
     category: "Teman Parenting",
     readTime: "8 min",
     author: {
@@ -171,7 +175,7 @@ export const temanParentingArticles = [
         </div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      parenting2,
     category: "Teman Parenting",
     readTime: "8 min",
     author: {

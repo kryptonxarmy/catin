@@ -1,3 +1,9 @@
+import nikah1 from "../images/Teman Nikah/modulPoligami.jpeg";
+import nikah2 from "../images/Teman Nikah/nikahSiri.jpeg";
+import nikah3 from "../images/Teman Nikah/temanNikah1.jpeg";
+import nikah4 from "../images/Teman Nikah/temanNikah2.jpeg";
+import nikah5 from "../images/Teman Nikah/temanNikah3.jpeg";
+
 // Data artikel kategori Teman Nikah
 export const temanNikahArticles = [
   {
@@ -64,7 +70,7 @@ export const temanNikahArticles = [
 <!-- Comments are visible in the HTML source only --></div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      nikah5,
     category: "Teman Nikah",
     readTime: "8 min",
     author: {
@@ -147,7 +153,7 @@ export const temanNikahArticles = [
 <!-- Comments are visible in the HTML source only --></div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      nikah3,
     category: "Teman Nikah",
     readTime: "8 min",
     author: {
@@ -180,7 +186,7 @@ Namun dalam perkembangan jaman sekarang banyak wanita yang tersisih karena sifat
 <!-- Comments are visible in the HTML source only --></div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      nikah1,
     category: "Teman Nikah",
     readTime: "8 min",
     author: {
@@ -266,7 +272,7 @@ Namun dalam perkembangan jaman sekarang banyak wanita yang tersisih karena sifat
     </div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      nikah4,
     category: "Teman Nikah",
     readTime: "8 min",
     author: {
@@ -308,7 +314,7 @@ Namun dalam perkembangan jaman sekarang banyak wanita yang tersisih karena sifat
 <!-- Comments are visible in the HTML source only --></div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      nikah2,
     category: "Teman Nikah",
     readTime: "8 min",
     author: {

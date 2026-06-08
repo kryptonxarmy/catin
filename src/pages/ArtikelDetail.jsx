@@ -4,6 +4,7 @@ import { Clock, User, Calendar, ArrowLeft, Share2, BookOpen, Eye, Heart, Tag } f
 import { getArticleBySlug, getRelatedArticles, getCategoryColor } from "../data/artikelData.js";
 import panduanCatinPdf from "../data/pdf/MODUL Bimbingan Perkawinan untuk CATIN (Kemenag).pdf";
 import fondasiKeluargaPdf from "../data/pdf/Fondasi Keluarga Sakinah (Kemenag).pdf";
+import bukuPanduanCatin from "../data/pdf/Buku Panduan Website Catin.pdf";
 
 const ArtikelDetail = () => {
   const { slug } = useParams();
@@ -43,6 +44,11 @@ const ArtikelDetail = () => {
       id: "fondasi-sakinah",
       title: "Fondasi Keluarga Sakinah (Kemenag)",
       src: fondasiKeluargaPdf,
+    },
+    {
+      id: "buku-panduan-catin",
+      title: "Buku Panduan Catin (Kemenag)",
+      src: bukuPanduanCatin,
     },
   ];
   const [selectedPdfId, setSelectedPdfId] = useState(pdfOptions[0].id);

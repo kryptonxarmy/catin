@@ -1,3 +1,8 @@
+import belajar1 from "../images/Teman Belajar/belajar1.jpeg";
+import belajar2 from "../images/Teman Belajar/belajar2.jpeg";
+import belajar3 from "../images/Teman Belajar/belajar3.jpeg";
+import belajar4 from "../images/Teman Belajar/belajar4.jpeg";
+
 // Data artikel kategori Teman Belajar
 export const temanBelajarArticles = [
   {
@@ -20,7 +25,7 @@ export const temanBelajarArticles = [
     </div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      belajar3,
     category: "Teman Belajar",
     readTime: "8 min",
     author: {
@@ -80,7 +85,7 @@ export const temanBelajarArticles = [
     </p>
     </div>
   `,
-  "image": "https://images.unsplash.com/photo-1579546926041-cd7cb7e5dffb?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+  "image": belajar2,
   "category": "Teman Belajar",
   "readTime": "8 min",
   "author": {
@@ -286,7 +291,7 @@ export const temanBelajarArticles = [
     <p><em><span style="font-weight: 400;">Cambridge University Press. Diakses pada 2025. The role of emotions.</span></em></p>
     </div>
   `,
-  "image": "https://images.unsplash.com/photo-1579546926041-cd7cb7e5dffb?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+  "image": belajar1,
   "category": "Teman Belajar",
   "readTime": "8 min",
   "author": {
@@ -322,7 +327,7 @@ export const temanBelajarArticles = [
         <p><br /><br /></p>
     </div>
   `,
-  "image": "https://images.unsplash.com/photo-1579546926041-cd7cb7e5dffb?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+  "image": belajar4,
   "category": "Teman Belajar",
   "readTime": "8 min",
   "author": {

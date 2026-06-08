@@ -1,3 +1,8 @@
+import finance1 from "../images/Teman Finance/temanFinance1.jpeg";
+import finance2 from "../images/Teman Finance/temanFinance2.jpeg";
+import finance3 from "../images/Teman Finance/temanFinance3.jpeg";
+import finance4 from "../images/Teman Finance/temanFinance4.jpeg";
+
 // Data artikel kategori Teman Finansial
 export const temanFinansialArticles = [
    {
@@ -85,7 +90,7 @@ export const temanFinansialArticles = [
     </div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      finance1,
     category: "Teman Finansial",
     readTime: "8 min",
     author: {
@@ -157,7 +162,7 @@ export const temanFinansialArticles = [
 </div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      finance3,
     category: "Teman Finansial",
     readTime: "8 min",
     author: {
@@ -209,7 +214,7 @@ export const temanFinansialArticles = [
     </div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      finance4,
     category: "Teman Finansial",
     readTime: "8 min",
     author: {
@@ -311,7 +316,7 @@ export const temanFinansialArticles = [
 <!-- Comments are visible in the HTML source only --></div>
   `,
     image:
-      "https://images.unsplash.com/photo-1506748686218-2b1c6e7a11a2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg0fDB8MHxwaG90by1mZWRsaW5lLXZpZXx8fGVufDB8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080",
+      finance2,
     category: "Teman Finansial",
     readTime: "8 min",
     author: {
